@@ -8,7 +8,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/auth/', include('api.v1.auth.urls', namespace='auth')),
     path('api/v1/timetable/', include('api.v1.timetable.urls', namespace='timetable')),
-    path('api/v1/homeworks/', include('api.v1.homeworks.urls', namespace='homeworks'))
+    path('api/v1/homeworks/', include('api.v1.homeworks.urls', namespace='homeworks')),
+    path('api/v1/exams/', include('api.v1.exams.urls', namespace='exams')),
 ]
 
 if settings.DEBUG:
